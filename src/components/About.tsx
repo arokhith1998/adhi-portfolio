@@ -39,7 +39,7 @@ export default function About() {
               </div>
               <div className="flex justify-between">
                 <dt className="text-zinc-500">Focus</dt>
-                <dd className="text-zinc-100">Paid · SEO · Product · Pricing</dd>
+                <dd className="text-zinc-100">Digital · Product · Pricing</dd>
               </div>
               <div className="flex justify-between">
                 <dt className="text-zinc-500">Education</dt>
