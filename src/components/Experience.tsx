@@ -27,7 +27,7 @@ const jobs = [
     company: "Pixis",
     role: "Customer Success & Growth Manager - AI Platform",
     period: "Jul 2021 – Sep 2022",
-    location: "Mumbai, India",
+    location: "Bangalore, India",
     summary:
       "Managed $1.4M in media budgets across global D2C clients; delivered 3x ROAS and cut churn 50% while directing an 8-person team.",
   },
@@ -35,7 +35,7 @@ const jobs = [
     company: "GenY Medium",
     role: "Senior Digital Marketing Analyst",
     period: "Jan 2020 – Jun 2021",
-    location: "Chennai, India",
+    location: "Hyderabad, India",
     summary:
       "Delivered 16x ROAS for a D2C brand by rebuilding Google Merchant Center and Meta catalog feeds and launching structured Shopping + Advantage+ campaigns.",
   },
