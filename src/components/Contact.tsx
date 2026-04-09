@@ -25,11 +25,11 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Compose a mailto link — no backend needed. Opens the user's mail client
+    // Compose a mailto link - no backend needed. Opens the user's mail client
     // prefilled with their details. Swap for an API route later if desired.
     const subject = encodeURIComponent(`Portfolio inquiry from ${form.name}`);
     const body = encodeURIComponent(
-      `Hi Adhithya,\n\n${form.message}\n\n— ${form.name}\n${form.email}`
+      `Hi Adhithya,\n\n${form.message}\n\n- ${form.name}\n${form.email}`
     );
     window.location.href = `mailto:arokhith@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
@@ -49,7 +49,7 @@ export default function Contact() {
           <p className="mt-4 text-zinc-400 leading-relaxed">
             I&apos;m open to full-time roles in Paid Advertising, SEO, Product
             Marketing, and Pricing Strategy. The fastest way to reach me is
-            email — or drop a note in the form.
+            email - or drop a note in the form.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -127,7 +127,7 @@ export default function Contact() {
           >
             {sent ? (
               <>
-                <Check className="w-4 h-4" /> Sent — check your mail client
+                <Check className="w-4 h-4" /> Sent - check your mail client
               </>
             ) : (
               <>

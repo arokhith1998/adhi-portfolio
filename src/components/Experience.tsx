@@ -13,7 +13,7 @@ const jobs = [
     period: "Jun 2024 – Aug 2024",
     location: "Attleboro, MA",
     summary:
-      "Supported product marketing for new sensing lines — competitive research, pricing analysis, and content for sales enablement.",
+      "Supported product marketing for new sensing lines - competitive research, pricing analysis, and content for sales enablement.",
   },
   {
     company: "Plug Power",
@@ -21,11 +21,11 @@ const jobs = [
     period: "Oct 2022 – Jul 2023",
     location: "Latham, NY",
     summary:
-      "Owned PPC, display, and the MarTech stack — delivered −25% CPA and +20% conversion rate through bid and audience optimization.",
+      "Owned PPC, display, and the MarTech stack - delivered −25% CPA and +20% conversion rate through bid and audience optimization.",
   },
   {
     company: "Pixis",
-    role: "Customer Success & Growth Manager — AI Platform",
+    role: "Customer Success & Growth Manager - AI Platform",
     period: "Jul 2021 – Sep 2022",
     location: "Mumbai, India",
     summary:

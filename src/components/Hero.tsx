@@ -14,20 +14,20 @@ export default function Hero() {
       >
         <div>
           <p className="text-sm font-medium text-zinc-500 mb-4">
-            Hi, I&apos;m Adhithya —
+            Hi, I&apos;m Adhithya -
           </p>
           <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05] max-w-3xl text-zinc-50">
-            Marketing leader —{" "}
+            Marketing leader -{" "}
             <span className="text-zinc-500">
               Digital, Product & Pricing.
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-zinc-400 leading-relaxed">
             4+ years leading digital marketing, product marketing, and pricing
-            strategy across B2B and D2C ecommerce brands — from $1.4M paid
+            strategy across B2B and D2C ecommerce brands - from $1.4M paid
             media budgets and 16x ROAS rebuilds to GTM, positioning, and
             price architecture for new product lines. M.S. Marketing
-            Analytics with a Pricing specialization — Simon Business School,
+            Analytics with a Pricing specialization - Simon Business School,
             University of Rochester. Based in Boston, MA.
           </p>
 

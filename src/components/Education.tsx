@@ -3,14 +3,14 @@ import { GraduationCap, Star } from "lucide-react";
 const degrees = [
   {
     school: "Simon Business School, University of Rochester",
-    degree: "M.S. in Marketing Analytics — Pricing Specialization",
+    degree: "M.S. in Marketing Analytics - Pricing Specialization",
     period: "Dec 2024",
     details:
       "STEM-certified. Coursework: Pricing Policies, Advanced Pricing, Pricing Analytics, Consumer Behavior, Data Management & Visualization.",
     highlights: [
       "Vice President of Academic Affairs, Masters Advisory Council",
-      "Teaching Assistant — Digital Marketing Strategy & Economics and Marketing Strategy",
-      "Project Manager — led 5 consultants on a pro-bono GTM expansion project for Safran",
+      "Teaching Assistant - Digital Marketing Strategy & Economics and Marketing Strategy",
+      "Project Manager - led 5 consultants on a pro-bono GTM expansion project for Safran",
     ],
   },
   {
@@ -82,7 +82,7 @@ export default function Education() {
               className="w-full h-full object-cover"
             />
             <figcaption className="px-4 py-3 bg-zinc-900/70 text-xs text-zinc-400">
-              Presenting at Simon Business School — VP of Academic Affairs,
+              Presenting at Simon Business School - VP of Academic Affairs,
               Masters Advisory Council.
             </figcaption>
           </figure>

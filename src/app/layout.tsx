@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Adhithya Rokhith Bhaskar — Marketing Analytics",
+  title: "Adhithya Rokhith Bhaskar - Marketing Analytics",
   description:
     "Marketing Analytics professional with 4+ years in digital advertising, SEO, and performance marketing. M.S. Simon Business School.",
 };

@@ -30,7 +30,7 @@ const projects: Project[] = [
     emoji: "📈",
   },
   {
-    title: "SwipeHire — AI Job Matching",
+    title: "SwipeHire - AI Job Matching",
     blurb:
       "Built an AI job-matching MVP and ran paid + organic acquisition experiments (Google, Meta, Reddit, LinkedIn) to validate CAC, activation, and retention. Set up full attribution stack (GA4, GTM, dashboards) from scratch.",
     tags: ["Product", "GA4", "Paid Acquisition", "CRO"],
@@ -42,7 +42,7 @@ const projects: Project[] = [
   {
     title: "Optimal Pricing Prediction Model",
     blurb:
-      "Regression and ML-driven pricing model identifying the price point that maximizes revenue for a product — feature engineering, cross-validation, and price-elasticity analysis in Python.",
+      "Regression and ML-driven pricing model identifying the price point that maximizes revenue for a product - feature engineering, cross-validation, and price-elasticity analysis in Python.",
     tags: ["Pricing", "ML", "Python", "Elasticity"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",
@@ -52,7 +52,7 @@ const projects: Project[] = [
   {
     title: "Credit Card Approval Prediction",
     blurb:
-      "Classification models predicting credit card approvals — logistic regression, decision trees, and ensemble methods benchmarked on applicant features.",
+      "Classification models predicting credit card approvals - logistic regression, decision trees, and ensemble methods benchmarked on applicant features.",
     tags: ["Python", "Classification", "Finance"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",

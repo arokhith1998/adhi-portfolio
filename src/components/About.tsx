@@ -7,7 +7,7 @@ export default function About() {
       <div className="mt-6 grid md:grid-cols-5 gap-10">
         <div className="md:col-span-3 space-y-4 text-zinc-300 leading-relaxed">
           <p>
-            I work across four tracks that keep bleeding into each other —
+            I work across four tracks that keep bleeding into each other -
             <strong className="text-zinc-100"> paid advertising</strong>,{" "}
             <strong className="text-zinc-100">SEO</strong>,{" "}
             <strong className="text-zinc-100">product marketing</strong>, and{" "}
@@ -19,7 +19,7 @@ export default function About() {
           </p>
           <p>
             I&apos;m drawn to the problems where the answer sits at the
-            handshake between customer insight, acquisition, and price — the
+            handshake between customer insight, acquisition, and price - the
             place where experimentation compounds into real revenue.
           </p>
           <p>
