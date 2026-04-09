@@ -14,7 +14,6 @@ type Project = {
   tags: string[];
   link: string | null;
   repo: string | null;
-  // Gradient background used for the card header image.
   gradient: string;
   emoji: string;
 };
@@ -27,7 +26,7 @@ const projects: Project[] = [
     tags: ["Python", "pandas", "nsepython", "yfinance"],
     link: null,
     repo: "https://github.com/arokhith1998/nse-bot",
-    gradient: "from-emerald-400 via-teal-500 to-cyan-600",
+    gradient: "from-emerald-500 via-teal-600 to-cyan-700",
     emoji: "📈",
   },
   {
@@ -37,7 +36,7 @@ const projects: Project[] = [
     tags: ["Product", "GA4", "Paid Acquisition", "CRO"],
     link: null,
     repo: null,
-    gradient: "from-fuchsia-500 via-pink-500 to-rose-500",
+    gradient: "from-fuchsia-600 via-pink-600 to-rose-700",
     emoji: "💼",
   },
   {
@@ -47,7 +46,7 @@ const projects: Project[] = [
     tags: ["Pricing", "ML", "Python", "Elasticity"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",
-    gradient: "from-amber-400 via-orange-500 to-red-500",
+    gradient: "from-amber-500 via-orange-600 to-red-700",
     emoji: "💰",
   },
   {
@@ -57,7 +56,7 @@ const projects: Project[] = [
     tags: ["Python", "Classification", "Finance"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",
-    gradient: "from-indigo-500 via-blue-500 to-sky-500",
+    gradient: "from-indigo-600 via-blue-600 to-sky-700",
     emoji: "💳",
   },
   {
@@ -67,7 +66,7 @@ const projects: Project[] = [
     tags: ["Strategy", "Pricing", "Market Sizing"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",
-    gradient: "from-violet-500 via-purple-500 to-fuchsia-500",
+    gradient: "from-violet-600 via-purple-600 to-fuchsia-700",
     emoji: "📊",
   },
   {
@@ -77,14 +76,14 @@ const projects: Project[] = [
     tags: ["Data Analysis", "Visualization", "R"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",
-    gradient: "from-lime-400 via-green-500 to-emerald-600",
+    gradient: "from-lime-500 via-green-600 to-emerald-700",
     emoji: "🇺🇸",
   },
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="max-w-5xl mx-auto px-6 py-20 border-t border-zinc-200">
+    <section id="projects" className="max-w-5xl mx-auto px-6 py-20 border-t border-zinc-800">
       <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-500">
         Featured Projects
       </h2>
@@ -92,7 +91,7 @@ export default function Projects() {
         {projects.map((p) => (
           <article
             key={p.title}
-            className="group rounded-2xl border border-zinc-200 overflow-hidden hover:border-zinc-900 transition-colors flex flex-col"
+            className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 overflow-hidden hover:border-zinc-600 transition-colors flex flex-col"
           >
             <div
               className={`relative h-40 bg-gradient-to-br ${p.gradient} flex items-center justify-center overflow-hidden`}
@@ -111,15 +110,15 @@ export default function Projects() {
               </span>
             </div>
             <div className="p-6 flex flex-col flex-1">
-              <h3 className="font-semibold text-zinc-900 text-lg">{p.title}</h3>
-              <p className="mt-2 text-[15px] text-zinc-600 leading-relaxed flex-1">
+              <h3 className="font-semibold text-zinc-100 text-lg">{p.title}</h3>
+              <p className="mt-2 text-[15px] text-zinc-400 leading-relaxed flex-1">
                 {p.blurb}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {p.tags.map((t) => (
                   <span
                     key={t}
-                    className="text-xs px-2.5 py-1 rounded-full bg-zinc-100 text-zinc-700"
+                    className="text-xs px-2.5 py-1 rounded-full bg-zinc-800 text-zinc-300"
                   >
                     {t}
                   </span>
@@ -132,7 +131,7 @@ export default function Projects() {
                       href={p.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 text-zinc-700 hover:text-zinc-900"
+                      className="inline-flex items-center gap-1.5 text-zinc-300 hover:text-zinc-50"
                     >
                       <ExternalLink className="w-4 h-4" /> Live
                     </a>
@@ -142,7 +141,7 @@ export default function Projects() {
                       href={p.repo}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 text-zinc-700 hover:text-zinc-900"
+                      className="inline-flex items-center gap-1.5 text-zinc-300 hover:text-zinc-50"
                     >
                       <Github className="w-4 h-4" /> Code
                     </a>

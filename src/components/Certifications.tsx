@@ -1,7 +1,5 @@
 import { Award } from "lucide-react";
 
-// Sources: resume + common marketing certifications. Swap/extend with your exact
-// LinkedIn Learning certifications when ready.
 const certs = [
   { name: "Google Search Ads", issuer: "Google" },
   { name: "Google Shopping Ads", issuer: "Google" },
@@ -24,7 +22,7 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="max-w-5xl mx-auto px-6 py-20 border-t border-zinc-200"
+      className="max-w-5xl mx-auto px-6 py-20 border-t border-zinc-800"
     >
       <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-500">
         Certifications
@@ -33,11 +31,11 @@ export default function Certifications() {
         {certs.map((c) => (
           <div
             key={c.name}
-            className="flex items-start gap-3 rounded-xl border border-zinc-200 p-4 hover:border-zinc-900 transition-colors"
+            className="flex items-start gap-3 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 hover:border-zinc-600 transition-colors"
           >
-            <Award className="w-5 h-5 text-zinc-400 shrink-0 mt-0.5" />
+            <Award className="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" />
             <div>
-              <p className="text-sm font-semibold text-zinc-900 leading-snug">
+              <p className="text-sm font-semibold text-zinc-100 leading-snug">
                 {c.name}
               </p>
               <p className="text-xs text-zinc-500 mt-0.5">{c.issuer}</p>

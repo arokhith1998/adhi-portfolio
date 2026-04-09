@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-// Logos are sourced from Google's favicon service, which reliably resolves
-// for every live domain. If even that fails, a text-only fallback is shown.
 const clients = [
   { name: "Skoda", domain: "skoda-auto.com" },
   { name: "MyGlamm", domain: "myglamm.com" },
@@ -26,7 +24,7 @@ function ClientTile({ name, domain }: { name: string; domain: string }) {
 
   return (
     <div
-      className="flex items-center justify-center gap-3 h-20 px-6 rounded-xl border border-zinc-200 bg-white min-w-[200px]"
+      className="flex items-center justify-center gap-3 h-20 px-6 rounded-xl border border-zinc-800 bg-zinc-900/50 min-w-[200px]"
       title={name}
     >
       {!failed && (
@@ -34,12 +32,12 @@ function ClientTile({ name, domain }: { name: string; domain: string }) {
         <img
           src={src}
           alt={`${name} logo`}
-          className="h-8 w-8 object-contain"
+          className="h-8 w-8 object-contain bg-white rounded-md p-0.5"
           referrerPolicy="no-referrer"
           onError={() => setFailed(true)}
         />
       )}
-      <span className="text-zinc-800 font-semibold text-base tracking-tight">
+      <span className="text-zinc-100 font-semibold text-base tracking-tight">
         {name}
       </span>
     </div>
@@ -50,20 +48,20 @@ export default function Clients() {
   const loop = [...clients, ...clients];
 
   return (
-    <section className="py-20 border-t border-zinc-200 overflow-hidden">
+    <section className="py-20 border-t border-zinc-800 overflow-hidden">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-500">
           Clients & Companies
         </h2>
-        <p className="mt-3 text-zinc-600 max-w-2xl">
+        <p className="mt-3 text-zinc-400 max-w-2xl">
           Brands and teams I&apos;ve partnered with across performance
           marketing, analytics, and growth.
         </p>
       </div>
 
       <div className="relative mt-10 group">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-zinc-950 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-zinc-950 to-transparent z-10" />
 
         <div className="flex w-max animate-marquee gap-8 whitespace-nowrap group-hover:[animation-play-state:paused]">
           {loop.map((c, i) => (
