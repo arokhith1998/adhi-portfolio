@@ -1,30 +1,30 @@
 const jobs = [
   {
     company: "Sensata Technologies",
-    role: "Product Marketing Intern",
-    period: "Jun 2024 – Aug 2024",
-    points: [
-      "Built interactive Power BI dashboards translating competitive and market research into actionable strategy.",
-      "Leveraged advanced Excel (pivot tables, data modeling) for rigorous data integrity.",
-    ],
+    role: "Growth & Product Marketing",
+    period: "Sep 2024 – Present",
+    points: ["Product Marketing", "Product Marketing Intern"],
   },
   {
     company: "Plug Power",
     role: "Digital Marketing Manager",
     period: "Oct 2022 – Jul 2023",
     points: [
-      "Led A/B testing and comparative analysis — decreased CPA by 25%.",
-      "Automated marketing operations, cutting bounce rate 30% and CPL 50%.",
+      "Led PPC and display campaigns across Google Ads, Meta, and LinkedIn — A/B tested keywords, match types, bid strategies, and creatives to deliver −25% CPA and +20% conversion rate.",
+      "Owned keyword research and bid optimization across omni-channel campaigns, refining auction dynamics to cut wasted spend 15%.",
+      "Built audience segments and retargeting funnels using Adobe Audience Manager and CRM data, improving MQL-to-SQL conversion across priority product lines.",
+      "Automated the MarTech stack (Salesforce, Adobe Analytics, GA, GTM) for closed-loop attribution from ad click to SQL.",
     ],
   },
   {
     company: "Pixis",
-    role: "Customer Success / Digital Marketing Manager — AI Platform Expert",
+    role: "Customer Success & Growth Manager (AI Platform)",
     period: "Jul 2021 – Sep 2022",
     points: [
-      "Reduced churn 50% by restructuring client engagement for budget-constrained accounts.",
-      "Delivered 300% ROI lift within a month for a leading fashion brand.",
-      "Managed an 8-member team overseeing $1.4M in client budgets.",
+      "Managed $1.4M media budget across global D2C and ecommerce clients; ran weekly PPC and display optimization cycles across Google, Meta, and programmatic channels.",
+      "Delivered 3x ROAS in one month for a leading fashion brand via Shopping feed cleanup, smart bidding, creative refresh, and lookalike expansion.",
+      "Reduced client churn 50% through proactive partner strategy reviews and vertical-specific advertising playbooks.",
+      "Directed an 8-person team executing ecommerce marketplace advertising strategies across multiple accounts.",
     ],
   },
   {
@@ -32,9 +32,8 @@ const jobs = [
     role: "Senior Digital Marketing Analyst",
     period: "Jan 2020 – Jun 2021",
     points: [
-      "Delivered 16x ROAS lift for a D2C brand via Google Merchant Center and Meta catalog optimization.",
-      "Executed SEO audits improving keyword quality, internal linking, and content.",
-      "Built database audits and dashboards, improving data accessibility 30%.",
+      "Delivered 16x ROAS for a D2C ecommerce brand by rebuilding Google Merchant Center and Meta catalog feeds, fixing disapprovals, and launching structured Shopping + Advantage+ campaigns.",
+      "Ran full-funnel paid media (Search, Shopping, Display, Meta) and built weekly performance dashboards informing budget reallocation and creative roadmaps.",
     ],
   },
 ];

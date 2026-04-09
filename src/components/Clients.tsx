@@ -1,7 +1,10 @@
 "use client";
 
-// Logos are fetched from Clearbit's free logo CDN (logo.clearbit.com/<domain>).
-// If any logo fails to load, the brand name text is shown as a fallback.
+import { useState } from "react";
+
+// Logos sourced from Google's favicon service as a reliable fallback
+// (guaranteed to resolve for any live domain). Swap with high-res PNG/SVG
+// assets in /public/logos/ later for sharper display.
 const clients = [
   { name: "Skoda", domain: "skoda-auto.com" },
   { name: "MyGlamm", domain: "myglamm.com" },
@@ -17,6 +20,40 @@ const clients = [
   { name: "Spotify", domain: "spotify.com" },
   { name: "NoBroker", domain: "nobroker.in" },
 ];
+
+function ClientTile({ name, domain }: { name: string; domain: string }) {
+  const [src, setSrc] = useState(`https://logo.clearbit.com/${domain}?size=200`);
+  const [failed, setFailed] = useState(false);
+
+  const handleError = () => {
+    if (src.includes("clearbit")) {
+      // Fallback to Google's favicon service (always resolves).
+      setSrc(`https://www.google.com/s2/favicons?domain=${domain}&sz=128`);
+    } else {
+      setFailed(true);
+    }
+  };
+
+  return (
+    <div
+      className="flex items-center justify-center gap-3 h-20 px-8 rounded-xl border border-zinc-200 bg-white min-w-[200px]"
+      title={name}
+    >
+      {!failed && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={src}
+          alt={`${name} logo`}
+          className="max-h-10 max-w-[48px] object-contain"
+          onError={handleError}
+        />
+      )}
+      <span className="text-zinc-800 font-semibold text-base tracking-tight">
+        {name}
+      </span>
+    </div>
+  );
+}
 
 export default function Clients() {
   const loop = [...clients, ...clients];
@@ -37,31 +74,9 @@ export default function Clients() {
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10" />
 
-        <div className="flex w-max animate-marquee gap-10 whitespace-nowrap group-hover:[animation-play-state:paused]">
+        <div className="flex w-max animate-marquee gap-8 whitespace-nowrap group-hover:[animation-play-state:paused]">
           {loop.map((c, i) => (
-            <div
-              key={`${c.name}-${i}`}
-              className="flex items-center justify-center h-20 px-8 rounded-xl border border-zinc-200 bg-white min-w-[180px]"
-              title={c.name}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`https://logo.clearbit.com/${c.domain}?size=200`}
-                alt={`${c.name} logo`}
-                className="max-h-10 max-w-[140px] object-contain grayscale hover:grayscale-0 transition"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  target.style.display = "none";
-                  const fallback = target.nextElementSibling as HTMLElement | null;
-                  if (fallback) fallback.style.display = "block";
-                }}
-              />
-              <span
-                className="hidden text-zinc-700 font-semibold text-lg tracking-tight"
-              >
-                {c.name}
-              </span>
-            </div>
+            <ClientTile key={`${c.name}-${i}`} name={c.name} domain={c.domain} />
           ))}
         </div>
       </div>
