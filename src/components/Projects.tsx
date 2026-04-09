@@ -10,12 +10,12 @@ function Github({ className }: { className?: string }) {
 
 const projects = [
   {
-    title: "NSE Intelligence",
+    title: "NSE Paper-Trading Bot",
     blurb:
-      "A quantitative research project analyzing NSE (National Stock Exchange of India) market data to surface trading signals, sector trends, and index movement patterns.",
-    tags: ["Python", "Finance", "NSE", "Quant Analytics"],
+      "A local paper-trading system for the Indian stock market that pulls live prices via nsepython and Yahoo Finance, scores a watchlist with technical indicators, and surfaces picks in an interactive HTML dashboard — built to validate whether a trading system has a real edge before risking capital.",
+    tags: ["Python", "pandas", "nsepython", "yfinance"],
     link: null,
-    repo: "https://github.com/arokhith1998/nse-intelligence",
+    repo: "https://github.com/arokhith1998/nse-bot",
   },
   {
     title: "Optimal Pricing Prediction Model",
