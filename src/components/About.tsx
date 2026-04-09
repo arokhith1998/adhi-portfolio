@@ -7,23 +7,23 @@ export default function About() {
       <div className="mt-6 grid md:grid-cols-5 gap-10">
         <div className="md:col-span-3 space-y-4 text-zinc-700 leading-relaxed">
           <p>
-            I&apos;m a performance marketer who&apos;s spent the last four
-            years running PPC, display, and Shopping campaigns across paid
-            search, social, and programmatic — for both B2B and D2C ecommerce
+            I work at the intersection of digital marketing, product
+            marketing, and pricing. Over four years I&apos;ve run PPC, display,
+            and Shopping campaigns, built GTM and positioning for new
+            products, and shaped pricing strategy for B2B and D2C ecommerce
             brands.
           </p>
           <p>
-            From rebuilding Google Merchant Center and Shopping feeds to
-            delivering -25% CPA through bid optimization, and running
-            $1.4M+ in media budgets across global clients, I care about the
-            part of the job where messy data becomes a clear bet — and the
-            bet pays off.
+            I&apos;m drawn to the problems where the answer sits at the
+            handshake between customer insight, paid acquisition, and price —
+            the place where experimentation compounds into real revenue.
           </p>
           <p>
-            My path: Mechanical Engineering at BITS Pilani → digital
-            strategy and analytics at GenY Medium, Pixis, and Plug Power →
-            M.S. in Marketing Analytics at Simon Business School → Growth &
-            Product Marketing at Sensata Technologies.
+            My path: Mechanical Engineering at BITS Pilani → digital strategy
+            and analytics at GenY Medium, Pixis, and Plug Power → M.S.
+            Marketing Analytics with a Pricing specialization at Simon
+            Business School → Growth & Product Marketing at Sensata
+            Technologies.
           </p>
         </div>
         <div className="md:col-span-2">
@@ -35,12 +35,12 @@ export default function About() {
                 <dd className="text-zinc-900">Boston, MA</dd>
               </div>
               <div className="flex justify-between">
-                <dt className="text-zinc-500">Education</dt>
-                <dd className="text-zinc-900">M.S. Simon (Rochester)</dd>
+                <dt className="text-zinc-500">Focus</dt>
+                <dd className="text-zinc-900">Digital · Product · Pricing</dd>
               </div>
               <div className="flex justify-between">
-                <dt className="text-zinc-500">Focus</dt>
-                <dd className="text-zinc-900">PPC · Display · Marketplace</dd>
+                <dt className="text-zinc-500">Education</dt>
+                <dd className="text-zinc-900">M.S. Simon (Rochester)</dd>
               </div>
               <div className="flex justify-between">
                 <dt className="text-zinc-500">Open to</dt>

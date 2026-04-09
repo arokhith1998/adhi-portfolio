@@ -15,14 +15,15 @@ export default function Hero() {
           Hi, I&apos;m Adhithya —
         </p>
         <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05] max-w-3xl">
-          Digital Advertising Strategist turning paid media into{" "}
-          <span className="text-zinc-400">measurable growth.</span>
+          Digital Marketing, Product Marketing &{" "}
+          <span className="text-zinc-400">Pricing strategist.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-zinc-600 leading-relaxed">
-          Performance marketer with 4+ years running PPC, display, and Shopping
-          campaigns across paid search, social, and programmatic for B2B and
-          D2C ecommerce brands. M.S. Marketing Analytics — Simon Business
-          School, University of Rochester. Based in Boston, MA.
+          4+ years across PPC, display, and Shopping campaigns, GTM and
+          positioning for new products, and pricing strategy for B2B and D2C
+          ecommerce brands. M.S. Marketing Analytics with a Pricing
+          specialization — Simon Business School, University of Rochester.
+          Based in Boston, MA.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">

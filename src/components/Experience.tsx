@@ -3,38 +3,33 @@ const jobs = [
     company: "Sensata Technologies",
     role: "Growth & Product Marketing",
     period: "Sep 2024 – Present",
-    points: ["Product Marketing", "Product Marketing Intern"],
+    location: "Boston, MA",
+    summary:
+      "Leading GTM strategy, positioning, and pricing for new sensing products across North America and Europe.",
   },
   {
     company: "Plug Power",
     role: "Digital Marketing Manager",
     period: "Oct 2022 – Jul 2023",
-    points: [
-      "Led PPC and display campaigns across Google Ads, Meta, and LinkedIn — A/B tested keywords, match types, bid strategies, and creatives to deliver −25% CPA and +20% conversion rate.",
-      "Owned keyword research and bid optimization across omni-channel campaigns, refining auction dynamics to cut wasted spend 15%.",
-      "Built audience segments and retargeting funnels using Adobe Audience Manager and CRM data, improving MQL-to-SQL conversion across priority product lines.",
-      "Automated the MarTech stack (Salesforce, Adobe Analytics, GA, GTM) for closed-loop attribution from ad click to SQL.",
-    ],
+    location: "Latham, NY",
+    summary:
+      "Owned PPC, display, and MarTech stack — delivered −25% CPA and +20% conversion rate through bid and audience optimization.",
   },
   {
     company: "Pixis",
-    role: "Customer Success & Growth Manager (AI Platform)",
+    role: "Customer Success & Growth Manager — AI Platform",
     period: "Jul 2021 – Sep 2022",
-    points: [
-      "Managed $1.4M media budget across global D2C and ecommerce clients; ran weekly PPC and display optimization cycles across Google, Meta, and programmatic channels.",
-      "Delivered 3x ROAS in one month for a leading fashion brand via Shopping feed cleanup, smart bidding, creative refresh, and lookalike expansion.",
-      "Reduced client churn 50% through proactive partner strategy reviews and vertical-specific advertising playbooks.",
-      "Directed an 8-person team executing ecommerce marketplace advertising strategies across multiple accounts.",
-    ],
+    location: "Mumbai, India",
+    summary:
+      "Managed $1.4M in media budgets across global D2C clients; delivered 3x ROAS and cut churn 50% while directing an 8-person team.",
   },
   {
     company: "GenY Medium",
     role: "Senior Digital Marketing Analyst",
     period: "Jan 2020 – Jun 2021",
-    points: [
-      "Delivered 16x ROAS for a D2C ecommerce brand by rebuilding Google Merchant Center and Meta catalog feeds, fixing disapprovals, and launching structured Shopping + Advantage+ campaigns.",
-      "Ran full-funnel paid media (Search, Shopping, Display, Meta) and built weekly performance dashboards informing budget reallocation and creative roadmaps.",
-    ],
+    location: "Chennai, India",
+    summary:
+      "Delivered 16x ROAS for a D2C brand by rebuilding Google Merchant Center and Meta catalog feeds and launching structured Shopping + Advantage+ campaigns.",
   },
 ];
 
@@ -44,22 +39,25 @@ export default function Experience() {
       <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-500">
         Experience
       </h2>
-      <ol className="mt-8 space-y-10">
+
+      <ol className="mt-10 relative">
+        {/* vertical spine */}
+        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-zinc-200" aria-hidden />
+
         {jobs.map((j) => (
-          <li key={j.company} className="grid md:grid-cols-5 gap-6">
-            <div className="md:col-span-2">
-              <p className="text-sm text-zinc-500">{j.period}</p>
-              <h3 className="mt-1 font-semibold text-zinc-900">{j.company}</h3>
-              <p className="text-sm text-zinc-600">{j.role}</p>
-            </div>
-            <ul className="md:col-span-3 space-y-2 text-zinc-700 leading-relaxed text-[15px]">
-              {j.points.map((p) => (
-                <li key={p} className="relative pl-5">
-                  <span className="absolute left-0 top-2.5 h-1 w-1 rounded-full bg-zinc-400" />
-                  {p}
-                </li>
-              ))}
-            </ul>
+          <li key={j.company} className="relative pl-10 pb-10 last:pb-0">
+            {/* dot */}
+            <span className="absolute left-0 top-1.5 h-[15px] w-[15px] rounded-full border-2 border-zinc-900 bg-white" />
+            <p className="text-xs font-medium text-zinc-500 uppercase tracking-wider">
+              {j.period} · {j.location}
+            </p>
+            <h3 className="mt-1 text-lg font-semibold text-zinc-900">
+              {j.role}
+            </h3>
+            <p className="text-sm text-zinc-600">{j.company}</p>
+            <p className="mt-3 text-[15px] text-zinc-700 leading-relaxed max-w-3xl">
+              {j.summary}
+            </p>
           </li>
         ))}
       </ol>

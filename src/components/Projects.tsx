@@ -8,30 +8,67 @@ function Github({ className }: { className?: string }) {
   );
 }
 
-const projects = [
+type Project = {
+  title: string;
+  blurb: string;
+  tags: string[];
+  link: string | null;
+  repo: string | null;
+  // Gradient background used for the card header image.
+  gradient: string;
+  emoji: string;
+};
+
+const projects: Project[] = [
   {
     title: "NSE Paper-Trading Bot",
     blurb:
-      "A local paper-trading system for the Indian stock market that pulls live prices via nsepython and Yahoo Finance, scores a watchlist with technical indicators, and surfaces picks in an interactive HTML dashboard — built to validate whether a trading system has a real edge before risking capital.",
+      "A local paper-trading system for the Indian stock market that pulls live prices via nsepython and Yahoo Finance, scores a watchlist with technical indicators, and surfaces picks in an interactive HTML dashboard.",
     tags: ["Python", "pandas", "nsepython", "yfinance"],
     link: null,
     repo: "https://github.com/arokhith1998/nse-bot",
+    gradient: "from-emerald-400 via-teal-500 to-cyan-600",
+    emoji: "📈",
+  },
+  {
+    title: "SwipeHire — AI Job Matching",
+    blurb:
+      "Built an AI job-matching MVP and ran paid + organic acquisition experiments (Google, Meta, Reddit, LinkedIn) to validate CAC, activation, and retention. Set up full attribution stack (GA4, GTM, dashboards) from scratch.",
+    tags: ["Product", "GA4", "Paid Acquisition", "CRO"],
+    link: null,
+    repo: null,
+    gradient: "from-fuchsia-500 via-pink-500 to-rose-500",
+    emoji: "💼",
   },
   {
     title: "Optimal Pricing Prediction Model",
     blurb:
-      "Regression and ML-driven pricing model built to identify the price point that maximizes revenue for a product, using feature engineering and model tuning in Python.",
-    tags: ["Python", "ML", "Pricing", "Regression"],
+      "Regression and ML-driven pricing model identifying the price point that maximizes revenue for a product — feature engineering, cross-validation, and price-elasticity analysis in Python.",
+    tags: ["Pricing", "ML", "Python", "Elasticity"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",
+    gradient: "from-amber-400 via-orange-500 to-red-500",
+    emoji: "💰",
   },
   {
     title: "Credit Card Approval Prediction",
     blurb:
-      "Classification models predicting credit card application approvals — logistic regression, decision trees, and ensemble methods benchmarked on applicant features.",
+      "Classification models predicting credit card approvals — logistic regression, decision trees, and ensemble methods benchmarked on applicant features.",
     tags: ["Python", "Classification", "Finance"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",
+    gradient: "from-indigo-500 via-blue-500 to-sky-500",
+    emoji: "💳",
+  },
+  {
+    title: "Market Sizing & Pricing Strategy",
+    blurb:
+      "Consulting-style deliverable: TAM/SAM/SOM sizing with a pricing strategy recommendation grounded in competitor benchmarking and willingness-to-pay analysis.",
+    tags: ["Strategy", "Pricing", "Market Sizing"],
+    link: null,
+    repo: "https://github.com/arokhith1998/Projects",
+    gradient: "from-violet-500 via-purple-500 to-fuchsia-500",
+    emoji: "📊",
   },
   {
     title: "USA Cost of Living Analysis",
@@ -40,22 +77,8 @@ const projects = [
     tags: ["Data Analysis", "Visualization", "R"],
     link: null,
     repo: "https://github.com/arokhith1998/Projects",
-  },
-  {
-    title: "Market Sizing & Pricing Strategy",
-    blurb:
-      "Consulting-style deliverable: TAM/SAM/SOM sizing with a pricing strategy recommendation grounded in competitor benchmarking and willingness-to-pay analysis.",
-    tags: ["Strategy", "Consulting", "Market Sizing"],
-    link: null,
-    repo: "https://github.com/arokhith1998/Projects",
-  },
-  {
-    title: "R Analytics & Learning-Center Chatbot",
-    blurb:
-      "Statistical analysis in R paired with a prototype chatbot for an education learning center — exploratory insights plus a conversational UX layer.",
-    tags: ["R", "NLP", "Chatbot"],
-    link: null,
-    repo: "https://github.com/arokhith1998/Projects",
+    gradient: "from-lime-400 via-green-500 to-emerald-600",
+    emoji: "🇺🇸",
   },
 ];
 
@@ -69,46 +92,64 @@ export default function Projects() {
         {projects.map((p) => (
           <article
             key={p.title}
-            className="group rounded-2xl border border-zinc-200 p-6 hover:border-zinc-900 transition-colors"
+            className="group rounded-2xl border border-zinc-200 overflow-hidden hover:border-zinc-900 transition-colors flex flex-col"
           >
-            <h3 className="font-semibold text-zinc-900 text-lg">{p.title}</h3>
-            <p className="mt-2 text-[15px] text-zinc-600 leading-relaxed">
-              {p.blurb}
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {p.tags.map((t) => (
-                <span
-                  key={t}
-                  className="text-xs px-2.5 py-1 rounded-full bg-zinc-100 text-zinc-700"
-                >
-                  {t}
-                </span>
-              ))}
+            <div
+              className={`relative h-40 bg-gradient-to-br ${p.gradient} flex items-center justify-center overflow-hidden`}
+            >
+              <div
+                aria-hidden
+                className="absolute inset-0 opacity-20"
+                style={{
+                  backgroundImage:
+                    "radial-gradient(circle at 20% 20%, white 1px, transparent 1px), radial-gradient(circle at 70% 60%, white 1px, transparent 1px)",
+                  backgroundSize: "24px 24px, 32px 32px",
+                }}
+              />
+              <span className="text-6xl drop-shadow-lg transition-transform group-hover:scale-110">
+                {p.emoji}
+              </span>
             </div>
-            {(p.link || p.repo) && (
-              <div className="mt-5 flex gap-4 text-sm">
-                {p.link && (
-                  <a
-                    href={p.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-zinc-700 hover:text-zinc-900"
+            <div className="p-6 flex flex-col flex-1">
+              <h3 className="font-semibold text-zinc-900 text-lg">{p.title}</h3>
+              <p className="mt-2 text-[15px] text-zinc-600 leading-relaxed flex-1">
+                {p.blurb}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {p.tags.map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-2.5 py-1 rounded-full bg-zinc-100 text-zinc-700"
                   >
-                    <ExternalLink className="w-4 h-4" /> Live
-                  </a>
-                )}
-                {p.repo && (
-                  <a
-                    href={p.repo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-zinc-700 hover:text-zinc-900"
-                  >
-                    <Github className="w-4 h-4" /> Code
-                  </a>
-                )}
+                    {t}
+                  </span>
+                ))}
               </div>
-            )}
+              {(p.link || p.repo) && (
+                <div className="mt-5 flex gap-4 text-sm">
+                  {p.link && (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-zinc-700 hover:text-zinc-900"
+                    >
+                      <ExternalLink className="w-4 h-4" /> Live
+                    </a>
+                  )}
+                  {p.repo && (
+                    <a
+                      href={p.repo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-zinc-700 hover:text-zinc-900"
+                    >
+                      <Github className="w-4 h-4" /> Code
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
           </article>
         ))}
       </div>
