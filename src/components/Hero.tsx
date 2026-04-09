@@ -15,8 +15,8 @@ export default function Hero() {
           Hi, I&apos;m Adhithya —
         </p>
         <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05] max-w-3xl">
-          Digital Marketing, Product Marketing &{" "}
-          <span className="text-zinc-400">Pricing strategist.</span>
+          Product & Pricing{" "}
+          <span className="text-zinc-400">strategist.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-zinc-600 leading-relaxed">
           4+ years across PPC, display, and Shopping campaigns, GTM and

@@ -8,6 +8,14 @@ const jobs = [
       "Leading GTM strategy, positioning, and pricing for new sensing products across North America and Europe.",
   },
   {
+    company: "Sensata Technologies",
+    role: "Product Marketing Intern",
+    period: "Jun 2024 – Aug 2024",
+    location: "Attleboro, MA",
+    summary:
+      "Supported product marketing for new sensing lines — competitive research, pricing analysis, and content for sales enablement.",
+  },
+  {
     company: "Plug Power",
     role: "Digital Marketing Manager",
     period: "Oct 2022 – Jul 2023",

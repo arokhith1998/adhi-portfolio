@@ -2,15 +2,14 @@
 
 import { useState } from "react";
 
-// Logos sourced from Google's favicon service as a reliable fallback
-// (guaranteed to resolve for any live domain). Swap with high-res PNG/SVG
-// assets in /public/logos/ later for sharper display.
+// Logos are sourced from Google's favicon service, which reliably resolves
+// for every live domain. If even that fails, a text-only fallback is shown.
 const clients = [
   { name: "Skoda", domain: "skoda-auto.com" },
   { name: "MyGlamm", domain: "myglamm.com" },
   { name: "Sensata", domain: "sensata.com" },
   { name: "Plug Power", domain: "plugpower.com" },
-  { name: "Narayana Group", domain: "narayanagroup.com" },
+  { name: "Narayana Group", domain: "narayanahealth.org" },
   { name: "GroupM", domain: "groupm.com" },
   { name: "Hotstar", domain: "hotstar.com" },
   { name: "ITC", domain: "itcportal.com" },
@@ -22,21 +21,12 @@ const clients = [
 ];
 
 function ClientTile({ name, domain }: { name: string; domain: string }) {
-  const [src, setSrc] = useState(`https://logo.clearbit.com/${domain}?size=200`);
   const [failed, setFailed] = useState(false);
-
-  const handleError = () => {
-    if (src.includes("clearbit")) {
-      // Fallback to Google's favicon service (always resolves).
-      setSrc(`https://www.google.com/s2/favicons?domain=${domain}&sz=128`);
-    } else {
-      setFailed(true);
-    }
-  };
+  const src = `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 
   return (
     <div
-      className="flex items-center justify-center gap-3 h-20 px-8 rounded-xl border border-zinc-200 bg-white min-w-[200px]"
+      className="flex items-center justify-center gap-3 h-20 px-6 rounded-xl border border-zinc-200 bg-white min-w-[200px]"
       title={name}
     >
       {!failed && (
@@ -44,8 +34,9 @@ function ClientTile({ name, domain }: { name: string; domain: string }) {
         <img
           src={src}
           alt={`${name} logo`}
-          className="max-h-10 max-w-[48px] object-contain"
-          onError={handleError}
+          className="h-8 w-8 object-contain"
+          referrerPolicy="no-referrer"
+          onError={() => setFailed(true)}
         />
       )}
       <span className="text-zinc-800 font-semibold text-base tracking-tight">
