@@ -47,8 +47,8 @@ export default function Contact() {
             Let&apos;s build something measurable.
           </h3>
           <p className="mt-4 text-zinc-400 leading-relaxed">
-            I&apos;m open to full-time roles in Product Marketing, Pricing
-            Strategy, and Digital Marketing. The fastest way to reach me is
+            I&apos;m open to full-time roles in Paid Advertising, SEO, Product
+            Marketing, and Pricing Strategy. The fastest way to reach me is
             email — or drop a note in the form.
           </p>
 

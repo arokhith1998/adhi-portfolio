@@ -7,21 +7,26 @@ export default function About() {
       <div className="mt-6 grid md:grid-cols-5 gap-10">
         <div className="md:col-span-3 space-y-4 text-zinc-300 leading-relaxed">
           <p>
-            I work at the intersection of product marketing and pricing —
-            backed by four years running PPC, display, and Shopping campaigns,
-            building GTM and positioning for new products, and shaping pricing
-            strategy for B2B and D2C ecommerce brands.
+            I work across four tracks that keep bleeding into each other —
+            <strong className="text-zinc-100"> paid advertising</strong>,{" "}
+            <strong className="text-zinc-100">SEO</strong>,{" "}
+            <strong className="text-zinc-100">product marketing</strong>, and{" "}
+            <strong className="text-zinc-100">pricing strategy</strong>. Four
+            years of running PPC, display, and Shopping campaigns, rebuilding
+            organic discoverability, shipping GTM and positioning for new
+            products, and shaping price architecture for B2B and D2C ecommerce
+            brands.
           </p>
           <p>
             I&apos;m drawn to the problems where the answer sits at the
-            handshake between customer insight, positioning, and price — the
+            handshake between customer insight, acquisition, and price — the
             place where experimentation compounds into real revenue.
           </p>
           <p>
-            My path: Mechanical Engineering at BITS Pilani → digital strategy
-            and analytics at GenY Medium, Pixis, and Plug Power → M.S.
-            Marketing Analytics with a Pricing specialization at Simon Business
-            School → Product Marketing at Sensata Technologies.
+            My path: Mechanical Engineering at BITS Pilani → paid and SEO
+            strategy at GenY Medium, Pixis, and Plug Power → M.S. Marketing
+            Analytics with a Pricing specialization at Simon Business School →
+            Product Marketing at Sensata Technologies.
           </p>
         </div>
         <div className="md:col-span-2">
@@ -34,7 +39,7 @@ export default function About() {
               </div>
               <div className="flex justify-between">
                 <dt className="text-zinc-500">Focus</dt>
-                <dd className="text-zinc-100">Product · Pricing</dd>
+                <dd className="text-zinc-100">Paid · SEO · Product · Pricing</dd>
               </div>
               <div className="flex justify-between">
                 <dt className="text-zinc-500">Education</dt>

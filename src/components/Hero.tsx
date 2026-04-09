@@ -30,15 +30,13 @@ export default function Hero() {
           Hi, I&apos;m Adhithya —
         </p>
         <h1 className="mt-3 text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05] max-w-4xl text-zinc-50">
-          Marketing leader,{" "}
-          <span className="text-zinc-500">
-            Product & Pricing strategist.
-          </span>
+          Paid Advertising, SEO,{" "}
+          <span className="text-zinc-500">Product & Pricing.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-zinc-400 leading-relaxed">
-          4+ years leading digital marketing, product marketing, and pricing
-          strategy across B2B and D2C ecommerce brands — from $1.4M paid media
-          budgets and 16x ROAS rebuilds to GTM, positioning, and price
+          4+ years across paid advertising, SEO, product marketing, and
+          pricing strategy for B2B and D2C ecommerce brands — from $1.4M
+          media budgets and 16x ROAS rebuilds to GTM, positioning, and price
           architecture for new product lines. M.S. Marketing Analytics with a
           Pricing specialization — Simon Business School, University of
           Rochester. Based in Boston, MA.
