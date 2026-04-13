@@ -17,7 +17,7 @@ export default function Hero() {
             Hi, I&apos;m Adhithya -
           </p>
           <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05] max-w-3xl text-zinc-50">
-            Marketing leader -{" "}
+            Marketing & Analytics Leader -{" "}
             <span className="text-zinc-500">
               Digital, Product & Pricing.
             </span>
