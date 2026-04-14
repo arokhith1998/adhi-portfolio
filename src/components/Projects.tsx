@@ -70,6 +70,16 @@ const projects: Project[] = [
     emoji: "📊",
   },
   {
+    title: "Bleeders & Leakers Analytics",
+    blurb:
+      "4-page Power BI dashboard for FY2026 margin recovery across 1,200 opportunities ($626M target). Classifies accounts as bleeders (gradual margin erosion) vs leakers (abrupt loss), with regional deep-dives, sales pipeline funnel, product family scorecards, and rep-level performance - built to surface the biggest recovery bets for leadership. Sanitized data.",
+    tags: ["Power BI", "Pricing", "Analytics", "Dashboard"],
+    link: null,
+    repo: "https://github.com/arokhith1998/Projects",
+    gradient: "from-yellow-500 via-amber-600 to-orange-700",
+    emoji: "📉",
+  },
+  {
     title: "USA Cost of Living Analysis",
     blurb:
       "Data-driven analysis of cost-of-living variance across U.S. regions, combining public datasets with Google data to map affordability and migration patterns.",
