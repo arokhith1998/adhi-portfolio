@@ -17,7 +17,7 @@ export default function Hero() {
             Hi, I&apos;m Adhithya -
           </p>
           <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05] max-w-3xl text-zinc-50">
-            Marketing & Analytics Leader -{" "}
+            Marketing Analytics & AI Leader -{" "}
             <span className="text-zinc-500">
               Digital, Product & Pricing.
             </span>
@@ -26,9 +26,10 @@ export default function Hero() {
             4+ years leading digital marketing, product marketing, and pricing
             strategy across B2B and D2C ecommerce brands - from $1.4M paid
             media budgets and 16x ROAS rebuilds to GTM, positioning, and
-            price architecture for new product lines. M.S. Marketing
-            Analytics with a Pricing specialization - Simon Business School,
-            University of Rochester. Based in Boston, MA.
+            price architecture for new product lines. Building AI-powered
+            products like SwipeHire and NSE-Bot. Anthropic certified.
+            M.S. Marketing Analytics with a Pricing specialization - Simon
+            Business School, University of Rochester. Based in Boston, MA.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

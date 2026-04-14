@@ -16,6 +16,10 @@ const certs = [
   { name: "Criteo Marketer Certification", issuer: "Criteo" },
   { name: "Principles of Negotiation", issuer: "Yale" },
   { name: "Advanced Pricing", issuer: "Simon Business School" },
+  { name: "Anthropic Claude Foundations", issuer: "Anthropic" },
+  { name: "Anthropic Prompt Engineering", issuer: "Anthropic" },
+  { name: "Anthropic Tool Use & Agents", issuer: "Anthropic" },
+  { name: "Anthropic Claude for Enterprise", issuer: "Anthropic" },
 ];
 
 export default function Certifications() {

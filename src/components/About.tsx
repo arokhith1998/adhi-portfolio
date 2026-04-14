@@ -7,15 +7,17 @@ export default function About() {
       <div className="mt-6 grid md:grid-cols-5 gap-10">
         <div className="md:col-span-3 space-y-4 text-zinc-300 leading-relaxed">
           <p>
-            I work across four tracks that keep bleeding into each other -
+            I work across marketing, analytics, and AI -
             <strong className="text-zinc-100"> paid advertising</strong>,{" "}
             <strong className="text-zinc-100">SEO</strong>,{" "}
-            <strong className="text-zinc-100">product marketing</strong>, and{" "}
-            <strong className="text-zinc-100">pricing strategy</strong>. Four
+            <strong className="text-zinc-100">product marketing</strong>,{" "}
+            <strong className="text-zinc-100">pricing strategy</strong>, and{" "}
+            <strong className="text-zinc-100">AI-driven products</strong>. Four
             years of running PPC, display, and Shopping campaigns, rebuilding
             organic discoverability, shipping GTM and positioning for new
-            products, and shaping price architecture for B2B and D2C ecommerce
-            brands.
+            products, shaping price architecture for B2B and D2C ecommerce
+            brands, and building AI-powered tools like SwipeHire (AI job
+            matching) and NSE-Bot (paper-trading with live market signals).
           </p>
           <p>
             I&apos;m drawn to the problems where the answer sits at the
@@ -39,7 +41,7 @@ export default function About() {
               </div>
               <div className="flex justify-between">
                 <dt className="text-zinc-500">Focus</dt>
-                <dd className="text-zinc-100">Digital · Product · Pricing</dd>
+                <dd className="text-zinc-100">Digital · Product · Pricing · AI</dd>
               </div>
               <div className="flex justify-between">
                 <dt className="text-zinc-500">Education</dt>
