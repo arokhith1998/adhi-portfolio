@@ -20,24 +20,84 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "SwipeHire - AI Job Matching",
+    blurb:
+      "Built an AI job-matching MVP and ran paid + organic acquisition experiments (Google, Meta, Reddit, LinkedIn) to validate CAC, activation, and retention. Set up full attribution stack (GA4, GTM, dashboards) from scratch.",
+    tags: ["AI", "Product", "GA4", "Paid Acquisition"],
+    link: null,
+    repo: null,
+    gradient: "from-fuchsia-600 via-pink-600 to-rose-700",
+    emoji: "💼",
+  },
+  {
     title: "NSE Paper-Trading Bot",
     blurb:
       "A local paper-trading system for the Indian stock market that pulls live prices via nsepython and Yahoo Finance, scores a watchlist with technical indicators, and surfaces picks in an interactive HTML dashboard.",
-    tags: ["Python", "pandas", "nsepython", "yfinance"],
+    tags: ["AI", "Python", "pandas", "yfinance"],
     link: null,
     repo: "https://github.com/arokhith1998/nse-bot",
     gradient: "from-emerald-500 via-teal-600 to-cyan-700",
     emoji: "📈",
   },
   {
-    title: "SwipeHire - AI Job Matching",
+    title: "Bleeders & Leakers Analytics",
     blurb:
-      "Built an AI job-matching MVP and ran paid + organic acquisition experiments (Google, Meta, Reddit, LinkedIn) to validate CAC, activation, and retention. Set up full attribution stack (GA4, GTM, dashboards) from scratch.",
-    tags: ["Product", "GA4", "Paid Acquisition", "CRO"],
+      "4-page Power BI dashboard for FY2026 margin recovery across 1,200 opportunities ($626M target). Classifies accounts as bleeders (gradual margin erosion) vs leakers (abrupt loss), with regional deep-dives, sales pipeline funnel, product family scorecards, and rep-level performance. Sanitized data.",
+    tags: ["Power BI", "Pricing", "Analytics", "Dashboard"],
     link: null,
-    repo: null,
-    gradient: "from-fuchsia-600 via-pink-600 to-rose-700",
-    emoji: "💼",
+    repo: "https://github.com/arokhith1998/Projects/blob/main/Bleeders_Leakers_2026_Report.pdf",
+    gradient: "from-yellow-500 via-amber-600 to-orange-700",
+    emoji: "📉",
+  },
+  {
+    title: "D2C Fashion - 300% ROI via Paid Search Restructure",
+    blurb:
+      "Case study on how I rebuilt a D2C fashion brand's paid search account from the ground up - Google Merchant Center cleanup, Shopping feed restructure, smart bidding, and creative refresh - delivering a 300% ROI lift within a month.",
+    tags: ["Paid Search", "Google Ads", "Shopping", "D2C"],
+    link: null,
+    repo: "https://github.com/arokhith1998/Projects/blob/main/D2C-Fashion-Brand-300percent-ROI-via-Paid-Search-Restructure.pdf",
+    gradient: "from-rose-500 via-red-600 to-pink-700",
+    emoji: "👗",
+  },
+  {
+    title: "B2B Lead Generation - LinkedIn & Paid Search",
+    blurb:
+      "A B2B lead-gen playbook combining LinkedIn paid campaigns with search demand capture - audience layering, bid strategy, creative testing, and attribution across the MQL-to-SQL funnel.",
+    tags: ["LinkedIn Ads", "Paid Search", "B2B", "Lead Gen"],
+    link: null,
+    repo: "https://github.com/arokhith1998/Projects/blob/main/B2B-Lead-Generation-LinkedIn%26%20Paid%20Search.pdf",
+    gradient: "from-sky-500 via-blue-600 to-indigo-700",
+    emoji: "🎯",
+  },
+  {
+    title: "Enterprise SEO Gap Analysis & Execution Strategy",
+    blurb:
+      "SEO strategy deck for an enterprise site - technical audit, content-gap analysis against competitors, and a prioritized execution roadmap targeting organic discoverability and keyword share-of-voice gains.",
+    tags: ["SEO", "Content Strategy", "Technical SEO", "Enterprise"],
+    link: null,
+    repo: "https://github.com/arokhith1998/Projects/blob/main/Enterprise-SEO-Gap-Analysis-Execution-Strategy.pdf",
+    gradient: "from-green-500 via-emerald-600 to-teal-700",
+    emoji: "🔍",
+  },
+  {
+    title: "Early-Stage Paid Growth at Pixis",
+    blurb:
+      "Growth playbook for an early-stage AI adtech platform - how I structured paid acquisition, onboarding, and expansion motions across $1.4M in global D2C client budgets to deliver 3x ROAS and cut churn 50%.",
+    tags: ["AI Adtech", "Growth", "Paid Media", "Customer Success"],
+    link: null,
+    repo: "https://github.com/arokhith1998/Projects/blob/main/Early-Stage%20Paid%20Growth%20at%20Pixis%20-%20AI%20Adtech%20Platform.pdf",
+    gradient: "from-purple-500 via-violet-600 to-indigo-700",
+    emoji: "🚀",
+  },
+  {
+    title: "Market Sizing & GTM - Safran (Simon Consulting)",
+    blurb:
+      "Pro-bono consulting project at Simon Business School: TAM/SAM/SOM sizing and go-to-market expansion strategy for Safran. Led a 5-person consultant team delivering competitor benchmarks and an entry-market recommendation.",
+    tags: ["Strategy", "GTM", "Market Sizing", "Consulting"],
+    link: null,
+    repo: "https://github.com/arokhith1998/Projects/blob/main/Market-Sizing-GTM-Analysis-SVC-Safran-Consulting.pdf",
+    gradient: "from-violet-600 via-purple-600 to-fuchsia-700",
+    emoji: "📊",
   },
   {
     title: "Optimal Pricing Prediction Model",
@@ -58,36 +118,6 @@ const projects: Project[] = [
     repo: "https://github.com/arokhith1998/Projects",
     gradient: "from-indigo-600 via-blue-600 to-sky-700",
     emoji: "💳",
-  },
-  {
-    title: "Market Sizing & Pricing Strategy",
-    blurb:
-      "Consulting-style deliverable: TAM/SAM/SOM sizing with a pricing strategy recommendation grounded in competitor benchmarking and willingness-to-pay analysis.",
-    tags: ["Strategy", "Pricing", "Market Sizing"],
-    link: null,
-    repo: "https://github.com/arokhith1998/Projects",
-    gradient: "from-violet-600 via-purple-600 to-fuchsia-700",
-    emoji: "📊",
-  },
-  {
-    title: "Bleeders & Leakers Analytics",
-    blurb:
-      "4-page Power BI dashboard for FY2026 margin recovery across 1,200 opportunities ($626M target). Classifies accounts as bleeders (gradual margin erosion) vs leakers (abrupt loss), with regional deep-dives, sales pipeline funnel, product family scorecards, and rep-level performance - built to surface the biggest recovery bets for leadership. Sanitized data.",
-    tags: ["Power BI", "Pricing", "Analytics", "Dashboard"],
-    link: null,
-    repo: "https://github.com/arokhith1998/Projects",
-    gradient: "from-yellow-500 via-amber-600 to-orange-700",
-    emoji: "📉",
-  },
-  {
-    title: "USA Cost of Living Analysis",
-    blurb:
-      "Data-driven analysis of cost-of-living variance across U.S. regions, combining public datasets with Google data to map affordability and migration patterns.",
-    tags: ["Data Analysis", "Visualization", "R"],
-    link: null,
-    repo: "https://github.com/arokhith1998/Projects",
-    gradient: "from-lime-500 via-green-600 to-emerald-700",
-    emoji: "🇺🇸",
   },
 ];
 
