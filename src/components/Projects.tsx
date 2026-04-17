@@ -24,7 +24,7 @@ const projects: Project[] = [
     blurb:
       "Built an AI job-matching MVP and ran paid + organic acquisition experiments (Google, Meta, Reddit, LinkedIn) to validate CAC, activation, and retention. Set up full attribution stack (GA4, GTM, dashboards) from scratch.",
     tags: ["AI", "Product", "GA4", "Paid Acquisition"],
-    link: null,
+    link: "https://swipehire.io/",
     repo: null,
     gradient: "from-fuchsia-600 via-pink-600 to-rose-700",
     emoji: "💼",
@@ -34,7 +34,7 @@ const projects: Project[] = [
     blurb:
       "A local paper-trading system for the Indian stock market that pulls live prices via nsepython and Yahoo Finance, scores a watchlist with technical indicators, and surfaces picks in an interactive HTML dashboard.",
     tags: ["AI", "Python", "pandas", "yfinance"],
-    link: null,
+    link: "https://nse-bot-lake.vercel.app/",
     repo: "https://github.com/arokhith1998/nse-bot",
     gradient: "from-emerald-500 via-teal-600 to-cyan-700",
     emoji: "📈",
