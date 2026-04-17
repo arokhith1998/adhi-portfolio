@@ -26,6 +26,7 @@ const testimonials: Testimonial[] = [
     title: "Senior Director - Product Marketing",
     company: "Plug Power",
     linkedin: "https://www.linkedin.com/in/erik-smith-4016378/",
+    photo: "/recommenders/erik-smith.jpg",
     quote:
       "Adhithya is a talented marketing professional with a bright future. He is skilled at creating and executing digital marketing campaigns optimized to achieve specific goals. Adhi is self-motivated and constantly working to improve and find new ways to add value.",
     pullQuote:
@@ -37,6 +38,7 @@ const testimonials: Testimonial[] = [
     company: "Plug Power",
     linkedin:
       "https://www.linkedin.com/in/sandra-saathoff-4276a13/?skipRedirect=true",
+    photo: "/recommenders/sandra-saathoff.jpg",
     quote:
       "I worked with Adhi at Plug both directly and indirectly for approximately 9 months. Adhi was a pleasure to work with. He came up to speed quickly and was almost immediately able to contribute meaningfully to our marketing team goals. His analysis skills are very good and his ability to take ownership of an issue and follow it through to completion, despite hurdles, enabled our team to implement marketing platform improvements resulting in increases in lead generation. He is able to create and share reports with a variety of team members in a way that helps them understand the results and readily accepts feedback for improvement of our campaign processes. I would enjoy working with Adhi again!",
     pullQuote:
